@@ -1,79 +1,97 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36" version="28.2.0">
   <diagram name="ERD" id="hw1dwIQq9LTDM1mx0bmX">
-    <mxGraphModel dx="3368" dy="1531" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="2981" dy="1295" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="Q0RriAnzwEX3wGJ0tr0o-1" value="APP_USER&#xa;&#xa;ID (PK)&#xa;USERNAME&#xa;PASSWORD&#xa;CREATED_DATE&#xa;PREVIOUS_LOGIN_DATE" style="shape=entityRelation;whiteSpace=wrap;align=left;verticalAlign=top;convertToSvg=0;spacing=10;spacingTop=5;spacingBottom=0;" vertex="1" parent="1">
+        <mxCell id="Q0RriAnzwEX3wGJ0tr0o-1" value="APP_USER&#xa;&#xa;ID (PK)&#xa;USERNAME&#xa;PASSWORD&#xa;CREATED_DATE&#xa;PREVIOUS_LOGIN_DATE" style="shape=entityRelation;whiteSpace=wrap;align=left;verticalAlign=top;convertToSvg=0;spacing=10;spacingTop=5;spacingBottom=0;textShadow=1;labelBorderColor=none;labelBackgroundColor=none;fixDash=0;fontSize=16;linejoin=arcs;enumerate=0;comic=1;" parent="1" vertex="1">
           <mxGeometry x="550" y="320" width="280" height="160" as="geometry" />
         </mxCell>
-        <mxCell id="Q0RriAnzwEX3wGJ0tr0o-2" value="TICKET&#xa;&#xa;ID (PK)&#xa;TITLE&#xa;DESCRIPTION&#xa;CREATED_DATE&#xa;CREATED_BY_APP_USER (FK)" style="shape=entityRelation;whiteSpace=wrap;align=left;verticalAlign=top;convertToSvg=0;spacing=10;spacingTop=5;spacingBottom=0;" vertex="1" parent="1">
+        <mxCell id="Q0RriAnzwEX3wGJ0tr0o-2" value="TICKET&#xa;&#xa;ID (PK)&#xa;TITLE&#xa;DESCRIPTION&#xa;CREATED_DATE&#xa;CREATED_BY_APP_USER (FK)" style="shape=entityRelation;whiteSpace=wrap;align=left;verticalAlign=top;convertToSvg=0;spacing=10;spacingTop=5;spacingBottom=0;textShadow=1;labelBorderColor=none;labelBackgroundColor=none;fixDash=0;fontSize=16;linejoin=arcs;enumerate=0;comic=1;" parent="1" vertex="1">
           <mxGeometry x="-50" y="320" width="280" height="160" as="geometry" />
         </mxCell>
-        <mxCell id="Q0RriAnzwEX3wGJ0tr0o-3" value="PROJECT&#xa;&#xa;ID (PK)&#xa;TITLE&#xa;DESCRIPTION&#xa;CREATED_DATE&#xa;CREATED_BY_APP_USER (FK)" style="shape=entityRelation;whiteSpace=wrap;align=left;verticalAlign=top;convertToSvg=0;spacing=10;spacingTop=5;spacingBottom=0;fontStyle=0" vertex="1" parent="1">
+        <mxCell id="Q0RriAnzwEX3wGJ0tr0o-3" value="PROJECT&#xa;&#xa;ID (PK)&#xa;TITLE&#xa;DESCRIPTION&#xa;CREATED_DATE&#xa;CREATED_BY_APP_USER (FK)" style="shape=entityRelation;whiteSpace=wrap;align=left;verticalAlign=top;convertToSvg=0;spacing=10;spacingTop=5;spacingBottom=0;fontStyle=0;textShadow=1;labelBorderColor=none;labelBackgroundColor=none;fixDash=0;fontSize=16;linejoin=arcs;enumerate=0;comic=1;" parent="1" vertex="1">
           <mxGeometry x="550" y="30" width="280" height="160" as="geometry" />
         </mxCell>
-        <mxCell id="Q0RriAnzwEX3wGJ0tr0o-4" value="TICKET_CATEGORY&#xa;&#xa;ID (PK)&#xa;TITLE&#xa;DESCRIPTION&#xa;IS_DEFAULT&#xa;CREATED_DATE&#xa;CREATED_BY_APP_USER (FK)" style="shape=entityRelation;whiteSpace=wrap;align=left;verticalAlign=top;convertToSvg=0;spacing=10;spacingTop=5;spacingBottom=0;" vertex="1" parent="1">
-          <mxGeometry x="550" y="590" width="280" height="160" as="geometry" />
+        <mxCell id="Q0RriAnzwEX3wGJ0tr0o-4" value="TICKET_CATEGORY&#xa;&#xa;ID (PK)&#xa;TITLE&#xa;DESCRIPTION&#xa;IS_DEFAULT&#xa;CREATED_DATE&#xa;CREATED_BY_APP_USER (FK)" style="shape=entityRelation;whiteSpace=wrap;align=left;verticalAlign=top;convertToSvg=0;spacing=10;spacingTop=5;spacingBottom=0;textShadow=1;labelBorderColor=none;labelBackgroundColor=none;fixDash=0;fontSize=16;linejoin=arcs;enumerate=0;comic=1;" parent="1" vertex="1">
+          <mxGeometry x="550" y="590" width="280" height="190" as="geometry" />
         </mxCell>
-        <mxCell id="Q0RriAnzwEX3wGJ0tr0o-5" value="TICKET_CATEGORY_TICKETS&#xa;&#xa;ID (PK)&#xa;TICKET_CATEGORY_ID (FK)&#xa;TICKET_ID (FK)" style="shape=entityRelation;whiteSpace=wrap;align=left;verticalAlign=top;convertToSvg=0;spacing=10;spacingTop=5;spacingBottom=0;" vertex="1" parent="1">
+        <mxCell id="Q0RriAnzwEX3wGJ0tr0o-5" value="TICKET_CATEGORY_TICKETS&#xa;&#xa;ID (PK)&#xa;TICKET_CATEGORY_ID (FK)&#xa;TICKET_ID (FK)" style="shape=entityRelation;whiteSpace=wrap;align=left;verticalAlign=top;convertToSvg=0;spacing=10;spacingTop=5;spacingBottom=0;textShadow=1;labelBorderColor=none;labelBackgroundColor=none;fixDash=0;fontSize=16;linejoin=arcs;enumerate=0;comic=1;" parent="1" vertex="1">
           <mxGeometry x="-50" y="850" width="280" height="160" as="geometry" />
         </mxCell>
-        <mxCell id="Q0RriAnzwEX3wGJ0tr0o-6" value="PROJECT_TICKET_CATEGORIES&#xa;&#xa;ID (PK)&#xa;PROJECT_ID (FK)&#xa;TICKET_CATEGORY_ID (FK)" style="shape=entityRelation;whiteSpace=wrap;align=left;verticalAlign=top;convertToSvg=0;spacing=10;spacingTop=5;spacingBottom=0;" vertex="1" parent="1">
+        <mxCell id="Q0RriAnzwEX3wGJ0tr0o-6" value="PROJECT_TICKET_CATEGORIES&#xa;&#xa;ID (PK)&#xa;PROJECT_ID (FK)&#xa;TICKET_CATEGORY_ID (FK)" style="shape=entityRelation;whiteSpace=wrap;align=left;verticalAlign=top;convertToSvg=0;spacing=10;spacingTop=5;spacingBottom=0;textShadow=1;labelBorderColor=none;labelBackgroundColor=none;fixDash=0;fontSize=16;linejoin=arcs;enumerate=0;comic=1;" parent="1" vertex="1">
           <mxGeometry x="1060" y="30" width="280" height="160" as="geometry" />
         </mxCell>
-        <mxCell id="Q0RriAnzwEX3wGJ0tr0o-7" value="" style="endArrow=block;endFill=1;strokeColor=#000000;align=left;verticalAlign=top;convertToSvg=0;spacing=10;spacingTop=5;spacingBottom=0;" edge="1" parent="1" source="Q0RriAnzwEX3wGJ0tr0o-2" target="Q0RriAnzwEX3wGJ0tr0o-1">
+        <mxCell id="Q0RriAnzwEX3wGJ0tr0o-7" value="" style="endArrow=block;endFill=1;strokeColor=#000000;align=left;verticalAlign=top;convertToSvg=0;spacing=10;spacingTop=5;spacingBottom=0;textShadow=1;labelBorderColor=none;labelBackgroundColor=none;fixDash=0;fontSize=16;linejoin=arcs;enumerate=0;comic=1;" parent="1" source="Q0RriAnzwEX3wGJ0tr0o-2" target="Q0RriAnzwEX3wGJ0tr0o-1" edge="1">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
               <mxPoint x="340" y="400" />
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="Q0RriAnzwEX3wGJ0tr0o-8" value="TICKET&lt;span style=&quot;background-color: light-dark(#ffffff, var(--ge-dark-color, #121212)); color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;_CREATED_BY_APP_USER&lt;/span&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="Q0RriAnzwEX3wGJ0tr0o-7">
+        <mxCell id="Q0RriAnzwEX3wGJ0tr0o-8" value="TICKET&lt;span style=&quot;color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;_CREATED_BY_APP_USER&lt;/span&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];textShadow=1;labelBorderColor=none;labelBackgroundColor=none;fixDash=0;fontSize=16;linejoin=arcs;enumerate=0;comic=1;" parent="Q0RriAnzwEX3wGJ0tr0o-7" vertex="1" connectable="0">
           <mxGeometry x="-0.0969" y="1" relative="1" as="geometry">
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="Q0RriAnzwEX3wGJ0tr0o-9" value="" style="endArrow=block;endFill=1;strokeColor=#000000;align=left;verticalAlign=top;convertToSvg=0;spacing=10;spacingTop=5;spacingBottom=0;" edge="1" parent="1" source="Q0RriAnzwEX3wGJ0tr0o-3" target="Q0RriAnzwEX3wGJ0tr0o-1">
+        <mxCell id="Q0RriAnzwEX3wGJ0tr0o-9" value="" style="endArrow=block;endFill=1;strokeColor=#000000;align=left;verticalAlign=top;convertToSvg=0;spacing=10;spacingTop=5;spacingBottom=0;textShadow=1;labelBorderColor=none;labelBackgroundColor=none;fixDash=0;fontSize=16;linejoin=arcs;enumerate=0;comic=1;" parent="1" source="Q0RriAnzwEX3wGJ0tr0o-3" target="Q0RriAnzwEX3wGJ0tr0o-1" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="Q0RriAnzwEX3wGJ0tr0o-10" value="PROJECT_CREATED_BY_APP_USER" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="Q0RriAnzwEX3wGJ0tr0o-9">
+        <mxCell id="Q0RriAnzwEX3wGJ0tr0o-10" value="PROJECT_CREATED_BY_APP_USER" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];textShadow=1;labelBorderColor=none;labelBackgroundColor=none;fixDash=0;fontSize=16;linejoin=arcs;enumerate=0;comic=1;" parent="Q0RriAnzwEX3wGJ0tr0o-9" vertex="1" connectable="0">
           <mxGeometry x="-0.2341" y="3" relative="1" as="geometry">
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="Q0RriAnzwEX3wGJ0tr0o-11" value="" style="endArrow=block;endFill=1;strokeColor=#000000;align=left;verticalAlign=top;convertToSvg=0;spacing=10;spacingTop=5;spacingBottom=0;" edge="1" parent="1" source="Q0RriAnzwEX3wGJ0tr0o-4" target="Q0RriAnzwEX3wGJ0tr0o-1">
+        <mxCell id="Q0RriAnzwEX3wGJ0tr0o-11" value="" style="endArrow=block;endFill=1;strokeColor=#000000;align=left;verticalAlign=top;convertToSvg=0;spacing=10;spacingTop=5;spacingBottom=0;textShadow=1;labelBorderColor=none;labelBackgroundColor=none;fixDash=0;fontSize=16;linejoin=arcs;enumerate=0;comic=1;" parent="1" source="Q0RriAnzwEX3wGJ0tr0o-4" target="Q0RriAnzwEX3wGJ0tr0o-1" edge="1">
           <mxGeometry relative="1" as="geometry">
             <Array as="points" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="Q0RriAnzwEX3wGJ0tr0o-12" value="TICKET_CATEGORY_&lt;div&gt;CREATED_BY_APP_USER&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="Q0RriAnzwEX3wGJ0tr0o-11">
+        <mxCell id="Q0RriAnzwEX3wGJ0tr0o-12" value="TICKET_CATEGORY_&lt;div&gt;CREATED_BY_APP_USER&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];textShadow=1;labelBorderColor=none;labelBackgroundColor=none;fixDash=0;fontSize=16;linejoin=arcs;enumerate=0;comic=1;" parent="Q0RriAnzwEX3wGJ0tr0o-11" vertex="1" connectable="0">
           <mxGeometry x="-0.1087" y="4" relative="1" as="geometry">
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="Q0RriAnzwEX3wGJ0tr0o-13" value="" style="endArrow=block;endFill=1;strokeColor=#000000;align=left;verticalAlign=top;convertToSvg=0;spacing=10;spacingTop=5;spacingBottom=0;" edge="1" parent="1" source="Q0RriAnzwEX3wGJ0tr0o-5" target="Q0RriAnzwEX3wGJ0tr0o-2">
+        <mxCell id="Q0RriAnzwEX3wGJ0tr0o-13" value="" style="endArrow=block;endFill=1;strokeColor=#000000;align=left;verticalAlign=top;convertToSvg=0;spacing=10;spacingTop=5;spacingBottom=0;textShadow=1;labelBorderColor=none;labelBackgroundColor=none;fixDash=0;fontSize=16;linejoin=arcs;enumerate=0;comic=1;" parent="1" source="Q0RriAnzwEX3wGJ0tr0o-5" target="Q0RriAnzwEX3wGJ0tr0o-2" edge="1">
           <mxGeometry relative="1" as="geometry">
-            <Array as="points">
-              <mxPoint x="90" y="660" />
-            </Array>
+            <Array as="points" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="Q0RriAnzwEX3wGJ0tr0o-14" value="" style="endArrow=block;endFill=1;strokeColor=#000000;align=left;verticalAlign=top;convertToSvg=0;spacing=10;spacingTop=5;spacingBottom=0;" edge="1" parent="1" source="Q0RriAnzwEX3wGJ0tr0o-5" target="Q0RriAnzwEX3wGJ0tr0o-4">
+        <mxCell id="RHa-ZI8XA5mo4nAKHHTx-1" value="TICKET_ID" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=16;textShadow=1;linejoin=arcs;enumerate=0;comic=1;" vertex="1" connectable="0" parent="Q0RriAnzwEX3wGJ0tr0o-13">
+          <mxGeometry x="0.0083" y="3" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Q0RriAnzwEX3wGJ0tr0o-14" value="" style="endArrow=block;endFill=1;strokeColor=#000000;align=left;verticalAlign=top;convertToSvg=0;spacing=10;spacingTop=5;spacingBottom=0;textShadow=1;labelBorderColor=none;labelBackgroundColor=none;fixDash=0;fontSize=16;linejoin=arcs;enumerate=0;comic=1;" parent="1" source="Q0RriAnzwEX3wGJ0tr0o-5" target="Q0RriAnzwEX3wGJ0tr0o-4" edge="1">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
               <mxPoint x="690" y="930" />
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="Q0RriAnzwEX3wGJ0tr0o-15" value="" style="endArrow=block;endFill=1;strokeColor=#000000;align=left;verticalAlign=top;convertToSvg=0;spacing=10;spacingTop=5;spacingBottom=0;" edge="1" parent="1" source="Q0RriAnzwEX3wGJ0tr0o-6" target="Q0RriAnzwEX3wGJ0tr0o-3">
+        <mxCell id="RHa-ZI8XA5mo4nAKHHTx-2" value="TICKET_CATEGORY_ID" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=16;textShadow=1;linejoin=arcs;enumerate=0;comic=1;" vertex="1" connectable="0" parent="Q0RriAnzwEX3wGJ0tr0o-14">
+          <mxGeometry x="-0.294" y="-3" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Q0RriAnzwEX3wGJ0tr0o-15" value="" style="endArrow=block;endFill=1;strokeColor=#000000;align=left;verticalAlign=top;convertToSvg=0;spacing=10;spacingTop=5;spacingBottom=0;textShadow=1;labelBorderColor=none;labelBackgroundColor=none;fixDash=0;fontSize=16;linejoin=arcs;enumerate=0;comic=1;" parent="1" source="Q0RriAnzwEX3wGJ0tr0o-6" target="Q0RriAnzwEX3wGJ0tr0o-3" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="Q0RriAnzwEX3wGJ0tr0o-16" value="" style="endArrow=block;endFill=1;strokeColor=#000000;align=left;verticalAlign=top;convertToSvg=0;spacing=10;spacingTop=5;spacingBottom=0;" edge="1" parent="1" source="Q0RriAnzwEX3wGJ0tr0o-6" target="Q0RriAnzwEX3wGJ0tr0o-4">
+        <mxCell id="RHa-ZI8XA5mo4nAKHHTx-3" value="PROJECT_ID&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=16;textShadow=1;linejoin=arcs;enumerate=0;comic=1;" vertex="1" connectable="0" parent="Q0RriAnzwEX3wGJ0tr0o-15">
+          <mxGeometry x="0.012" y="-2" relative="1" as="geometry">
+            <mxPoint x="1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Q0RriAnzwEX3wGJ0tr0o-16" value="" style="endArrow=block;endFill=1;strokeColor=#000000;align=left;verticalAlign=top;convertToSvg=0;spacing=10;spacingTop=5;spacingBottom=0;textShadow=1;labelBorderColor=none;labelBackgroundColor=none;fixDash=0;fontSize=16;linejoin=arcs;enumerate=0;comic=1;" parent="1" source="Q0RriAnzwEX3wGJ0tr0o-6" target="Q0RriAnzwEX3wGJ0tr0o-4" edge="1">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
               <mxPoint x="1200" y="670" />
             </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="RHa-ZI8XA5mo4nAKHHTx-4" value="TICKET_CATEGORY_ID&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=16;textShadow=1;linejoin=arcs;enumerate=0;comic=1;" vertex="1" connectable="0" parent="Q0RriAnzwEX3wGJ0tr0o-16">
+          <mxGeometry x="-0.0095" relative="1" as="geometry">
+            <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
       </root>
