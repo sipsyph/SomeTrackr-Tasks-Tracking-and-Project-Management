@@ -14,7 +14,18 @@ It’s built with simplicity in mind, making it easy to manage workflows for bot
 
 ---
 
-## 📌 General Code Direction
+## 📌 General Guidelines
+
+<details> 
+<summary>Project Direction</summary> 
+
+- Formally put your relevant questions and suggestions in the [Github Project](https://github.com/users/sipsyph/projects/3/views/1) Ticket itself so we have a documented trail.
+- Put every documentation on GitHub as much as possible.
+- Feel free to use AI, just make sure you own your changes.
+  
+</details>
+
+
 <details> 
 <summary>Dev Collaboration</summary> 
 
