@@ -1,41 +1,47 @@
 ### 
 ```mermaid
 flowchart TD
+    %% User
+    user((User))
+
     %% Frontend UI
-    subgraph Frontend [Frontend UI]
-        loginPage[Login Page]
-        dashboardPage[Dashboard Page]
-        projectDetails[Project Details Page]
-        ticketDetails[Ticket Details Page]
-        ticketsPage[Tickets List Page]
-        forgotPassword[Forgot Password Page]
-
+    subgraph LoginPage [LOGIN PAGE]
         loginButton(Login Button)
-        projectClickableItemUrl(Project Item Clickable)
-        ticketClickableItemUrl(Ticket Item Clickable)
-
         invalidCredsModal[["Invalid Credentials" Popup Modal]]
     end
 
-    %% Backend APIs
-    subgraph Backend [Backend API]
-        getProjects{{GET /project}}
-        getProject{{GET /project?id=}}
-        getTicketsByProject{{GET /ticket?projectId=}}
-        getTicket{{GET /ticket?id=}}
+    subgraph DashboardPage [DASHBOARD PAGE]
+        projectsListPanel[Projects List Panel]
+        projectClickableItemUrl(Project Item Clickable)
     end
 
-    %% Flows
-    loginPage --> loginButton
-    loginButton -- Success --> dashboardPage
-    loginButton -- Failure --> invalidCredsModal
-    loginPage -- Forgot Password --> forgotPassword
+    subgraph ProjectPage [PROJECT PAGE]
+        projectDetailsPanel[Project Details Panel]
+        ticketsListPanel[Tickets List Panel]
+        ticketClickableItemUrl(Ticket Item Clickable)
+        ticketDetailsPanel[Ticket Details Panel]
+    end
 
-    dashboardPage --> getProjects
-    getProjects -- Load as Project Items Clickable --> projectClickableItemUrl
-    projectClickableItemUrl --> getProject
-    getProject --> projectDetails --> getTicketsByProject --> ticketsPage
-    ticketsPage -- Load as Ticket Items Clickable --> ticketClickableItemUrl
-    ticketClickableItemUrl --> getTicket --> ticketDetails
+    %% Backend APIs
+    postUserLogin{{POST /user/login}}
+    getProjectsOfUser{{GET /user/projects}}
+    getProject{{GET /project?id=}}
+    getTicketsByProject{{GET /ticket?projectId=}}
+
+    %% Flows
+    user --> LoginPage
+    loginButton -.-> postUserLogin
+
+    postUserLogin -- Fail --> invalidCredsModal
+    postUserLogin -- Success --> getProjectsOfUser -- Load Projects of User --> DashboardPage 
+
+    projectsListPanel --> projectClickableItemUrl
+
+    projectClickableItemUrl -.-> getProject -- Load Project Details --> projectDetailsPanel
+    projectClickableItemUrl -.-> getTicketsByProject -- Load Tickets of Project --> ticketsListPanel
+
+    ticketsListPanel --> ticketClickableItemUrl
+    ticketClickableItemUrl -- Load Ticket Details --> ticketDetailsPanel
+
 
 ```
